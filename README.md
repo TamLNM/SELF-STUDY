@@ -17,7 +17,7 @@ Example: { "firstName": "Le Nguyen Minh", "lastName" : "Tam" }
 - <b>JSON Arrays</b>: "json_variable" : <object>
 Example: [ { "firstName": "Le Nguyen Minh", "lastName" : "Tam" } , { "firstName": "Nguyen Van", "lastName": "A" }
 - <b>Function covert a json string into javascript object</b>
-`var obj = JSON.parse(text);`
+var obj = JSON.parse(text);
   
 
 ## II. CODE - USEFUL EXTENSIONS
@@ -36,7 +36,7 @@ Example: [ { "firstName": "Le Nguyen Minh", "lastName" : "Tam" } , { "firstName"
 - Create a example text: <i>lorem<number of character you want to create></i>
 <br><b><i>Ex:</i></b> lorem20 + tab
 <br>--> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et repellendus quam voluptatibus possimus molestias ullam accusamus deserunt in voluptas amet.
-- Create multiple elements: <i>element*number_need_create</i>
+- Create multiple elements: `<i>element*number_need_create</i>`
 
 ## III. JAVASCRIPT
 ### 1. About the ECMAScript Editions:
@@ -74,10 +74,9 @@ Use for:
 - Prevent some work can be a key word in the future
 Command: 
 `use strict`
-The place you put the command `use strict` specified the affected area of strict mode.
-Examples:
-1. 
-```
+The place you put the command ```"use strict"``` specified the affected area of strict mode.
+Example:
+```javascript
 "use strict";
 function foo(){
     var bar = 0;
@@ -87,8 +86,124 @@ function foo(){
 // Uncaught ReferenceError: bar is not defined
 bar = 1;
 ```
+```javascript
+function foo(){
+    "use strict";
+    // Uncaught ReferenceError: bar is not defined
+    bar = 0;
+    return bar;
+}
+```
+- Inconvinient things in strict mode:
++ Can't use the variables that's not declared (by var/ let)
+
+// This will run normally
+bar = 1;
+
+### 3. ES6 Features
 
 
+### 4. JS let:
+- ES2015 introduced two important new JavaScript keywords: let and const.
+- For <b>Block Scope</b> variables and constants in Javascript
+- We have two different scopes: <b>Global Scope</b> and <b>Function Scope</b>
+#### a. About affectly variables scope
+###### a1. Global scope: which declared in the outside any function position: 
+Examples:
+```javascript
+var name = "Le Nguyen Minh Tam";
+// ---> code here can use name <---
+function myFunction() {
+  // ---> code here can also use name <----
+}
+```
+###### a2. Function Scrope: which declared locally
+Examples:
+```javascript
+// ---> code here CAN'T use name <---
+function myFunction() {
+  var name = "Le Nguyen Minh Tam";
+  // ---> code here can also use name <----
+}
+// ---> code here CAN'T use name <---
+```
+###### a3. Block scope: is the space inside (and between) {}
+Examples:
+- Var:
+```javascript
+{
+  var x = 2;
+}
+// x CAN be used here
+```
+- Let
+```javascript
+{
+  let x = 2;
+}
+// x can NOT be used here
+```
+
+##### a4. Redeclared variables:
+Examples:
+1.
+```javascript
+var  x = 10;
+// Here x is 10
+{  
+  var x = 2;
+  // Here x is 2
+}
+// Here x is 2
+```
+2.
+```javascript
+var  x = 10;
+// Here x is 10
+{  
+  let x = 2;
+  // Here x is 2
+}
+// Here x is 10
+```
+##### a5. Redeclared variables:
+Examples:
+1.
+```javascript
+var i = 5;
+for (var i = 0; i < 10; i++) {
+  // some statements
+}
+// Here i is 10
+```
+2.
+```javascript
+let i = 5;
+for (let i = 0; i < 10; i++) {
+  // some statements
+}
+// Here i is 5
+```
+##### a6. Using window.<variable>:
+1.
+```javascript
+var carName = "Volvo";
+// code here can use window.carName
+
+```  
+2.
+```javascript
+let carName = "Volvo";
+// code here cannot use window.carName
+```
+##### a7. Delared with var and let.<variable>:
+  > var (allowed) -> var (allowed)/ var (allowed) -> { var (allowed) }
+  > let (allowed) -> let (NOT allowed)
+  > let (allowed) -> let (allowed)/ let (allowed) -> { let (allowed) }
+  > var (allowed) -> let (NOT allowed) -> { var (allowed) -> let (NOT allowed) }
+  > let (allowed) -> var (NOT allowed) -> { let (allowed) -> var (NOT allowed) } 
+  > not (let, var) -> ... -> var (allowed)
+  > not (let, var) -> ... -> let (NOT allowed)
 
 ## ABBREVIATIONS + TERMINOLOGY
 1. EMCA (in EMCAScript): stands for "European Computer Manufacturer's Association". Can understand like ECMAScript is the modal in build on paper and javascript is the programming language to make it in computer to feel more easily.
