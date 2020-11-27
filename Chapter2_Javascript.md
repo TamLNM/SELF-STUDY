@@ -1,4 +1,4 @@
-## III. JAVASCRIPT
+## JAVASCRIPT
 ### 1. About the ECMAScript Editions:
 - We have about six version of ECMA Script, include ES1 - ES6, with 2 nearest function:
 + ES5: edition in 2009
