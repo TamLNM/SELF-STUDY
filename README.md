@@ -11,10 +11,10 @@
 - Is opened-standard for data transfer in the internet
 - Data: String, Number (any form), Booleans, null, Array, Object
 - Uses: key/value, name/value
-- <b>JSON OBJECT</b>: "json_variable" : <object>
-Example: { "firstName": "Le Nguyen Minh", "lastName" : "Tam" }
+- <b>JSON OBJECT</b>: "json_variable" : "object"
+<br>Example: { "firstName": "Le Nguyen Minh", "lastName" : "Tam" }
 - <b>JSON Arrays</b>: "json_variable" : <object>
-Example: [ { "firstName": "Le Nguyen Minh", "lastName" : "Tam" } , { "firstName": "Nguyen Van", "lastName": "A" }
+<br>Example: [ { "firstName": "Le Nguyen Minh", "lastName" : "Tam" } , { "firstName": "Nguyen Van", "lastName": "A" }
 - <b>Function covert a json string into javascript object</b>
 var obj = JSON.parse(text);
   
