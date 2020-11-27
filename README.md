@@ -195,7 +195,7 @@ console.log(initialData);
 ### 3. ES6 Features
 
 
-### 4. Let function is JS:
+### 4. Let in JS:
 - ES2015 introduced two important new JavaScript keywords: let and const.
 - For <b>Block Scope</b> variables and constants in Javascript
 - We have two different scopes: <b>Global Scope</b> and <b>Function Scope</b>
