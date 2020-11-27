@@ -1,6 +1,6 @@
-* PHP
+# PHP
 
-** I. Encode/ Decode
+## I. Encode/ Decode
 - Decode: convert a JSON string into a PHP Object
 ```PHP
 <?php
