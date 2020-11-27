@@ -2,7 +2,7 @@
 
 ## I. DATA - DATA TRANSFER
 ### 1. JSON:
-<img src="https://github.com/TamLNM/SELF-STUDY/blob/master/images/My slogan.png" width="200">
+<img src="https://github.com/TamLNM/SELF-STUDY/blob/master/images/json-logo.png" width="200">
 
 - Stands for "JavaScript Object Notation"
 - Is data representation Format
