@@ -2,8 +2,7 @@
 
 ## I. DATA - DATA TRANSFER
 ### 1. JSON:
-
-<img src="https://github.com/TamLNM/SELF-STUDY/blob/master/images/json-logo.png" width="200">
+<img src="https://github.com/TamLNM/SELF-STUDY/blob/master/images/My slogan.png" width="200">
 
 - Stands for "JavaScript Object Notation"
 - Is data representation Format
@@ -196,7 +195,7 @@ console.log(initialData);
 ### 3. ES6 Features
 
 
-### 4. JS let:
+### 4. Let function is JS:
 - ES2015 introduced two important new JavaScript keywords: let and const.
 - For <b>Block Scope</b> variables and constants in Javascript
 - We have two different scopes: <b>Global Scope</b> and <b>Function Scope</b>
@@ -304,8 +303,58 @@ let carName = "Volvo";
 - With the type of variables are primitive (includes: string, number, boolean, null and undefined), we can change the value of variables when declared with const.
 - With the type of variables are reference (include object, array or function) we can change the attributes of this variable.
 
-## ABBREVIATIONS + TERMINOLOGY
+### 5. FormData in HTML5:
+#### a. Initialize the FormData in HTML5
+3 common ways to initialize a formdata with Javascript:
+```javascript
+var formData = new FormData();
+var formData = new FormData(document.getElementById('formID'));
+var formData = new FormData($('form#formID')[0]);
+```
+#### b. Append:
+<b>Purpose:</b> Attach data to DataForm:
+```javascript
+formData.append(<key>, <value>);
+```
+
+#### c. Entries:
+<b>Purpose:</b> Convert data to type that developer can read or console log
+```javascript
+formData.append(name, value);
+formData.append(name, value, filename);
+```
+Usage examples:
+```javascript
+let formData = new FormData();
+formData.append('name', 'Le Nguyen Minh Tam');
+formData.append('age', 24);
+
+for(pair of formData.entries()){
+  console.log(pair[0] + ", " + pair[1])
+}
+```
+
+#### d. Values:
+<b>Purpose:</b> similar than <b>Entries</b> function, but just return the value of element
+```javascript
+fromData.value();
+```
+
+#### FUNCTION THAT I THINK IT'S NOT COMMON IN USE:
+- delete
+- get 
+- getAll
+- has
+- key
+- set
+
+
+
+##### *. ABBREVIATIONS + TERMINOLOGY
 1. EMCA (in EMCAScript): stands for "European Computer Manufacturer's Association". Can understand like ECMAScript is the modal in build on paper and javascript is the programming language to make it in computer to feel more easily.
+
+## IV. PHP
+
 
 ## DOCUMENTATION
 1. [(Vie) How to use Markdow - Write text for Github](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ)
