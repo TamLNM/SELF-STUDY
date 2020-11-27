@@ -11,7 +11,14 @@
 - Can read and understand by multiple programming language - Lightweight - Easy to intergate
 - Is opened-standard for data transfer in the internet
 - Data: String, Number (any form), Booleans, null, Array, Object
-- Uses: key - value 
+- Uses: key/value, name/value
+- <b>JSON OBJECT</b>: "json_variable" : <object>
+Example: { "firstName": "Le Nguyen Minh", "lastName" : "Tam" }
+- <b>JSON Arrays</b>: "json_variable" : <object>
+Example: [ { "firstName": "Le Nguyen Minh", "lastName" : "Tam" } , { "firstName": "Nguyen Van", "lastName": "A" }
+- <b>Function covert a json string into javascript object</b>
+`var obj = JSON.parse(text);`
+  
 
 ## II. CODE - USEFUL EXTENSIONS
 ### 1. <b>Emmet</b> - Extension for coding speed inscreasing
@@ -31,10 +38,65 @@
 <br>--> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et repellendus quam voluptatibus possimus molestias ullam accusamus deserunt in voluptas amet.
 - Create multiple elements: <i>element*number_need_create</i>
 
-  
+## III. JAVASCRIPT
+### 1. About the ECMAScript Editions:
+- We have about six version of ECMA Script, include ES1 - ES6, with 2 nearest function:
++ ES5: edition in 2009
++ ES6: edition in 2015 - 2018
+- Browers support for ES5: Chome ver23, IE ver9*/10, Edge ver10,...
+<i>* Internet Explorer 9 does not support ECMAScript 5 "use strict".</i>
+<i>Internet Explorer does not support ECMAScript 2015.</i>
+
+### 2. ES5 Features
+Includes:
+- use strict
+- String.trim()
+- Array.isArray()
+- Array.forEach()
+- Array.map()
+- Array.filter()
+- Array.reduce()
+- Array.reduceRight()
+- Array.every()
+- Array.some()
+- Array.indexOf()
+- Array.lastIndexOf()
+- JSON.parse()
+- JSON.stringify()
+- Date.now()
+- Property Getters and Setters
+- New Object Property Methods
+#### a. Use strict
+You can understand it as a "stict" mode, more difficult, more rules than tthe standard mode.
+Use for:
+- Prevent use, throw errors with the unsafe processing.
+- Disable confuse features or shouldn't use.
+- Prevent some work can be a key word in the future
+Command: 
+`use strict`
+The place you put the command `use strict` specified the affected area of strict mode.
+Examples:
+1. 
+```
+"use strict";
+function foo(){
+    var bar = 0;
+    return bar;
+}
+
+// Uncaught ReferenceError: bar is not defined
+bar = 1;
+```
+
+
+
+## ABBREVIATIONS + TERMINOLOGY
+1. EMCA (in EMCAScript): stands for "European Computer Manufacturer's Association". Can understand like ECMAScript is the modal in build on paper and javascript is the programming language to make it in computer to feel more easily.
+
 ## DOCUMENTATION
 1. [(Vie) How to use Markdow - Write text for Github](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ)
 2. [(Vie) Codehub Emmet](https://www.codehub.com.vn/Viet-HTML-Nhanh-Hon-Voi-Emmet)
+3. [(Eng) W3Schools](https://www.w3schools.com/)
  
 ## MY SELF-STUDY NOTES:
 1. [(Eng) How to covert HTML, CSS, Javascript into Wordpress - Step to do](https://docs.google.com/document/d/1xp-I7kgeLrttyS3ySjwmyGjvt7wh09t4Hn91B2fujmY/edit?usp=sharing)
@@ -54,3 +116,5 @@
 ### From Indian (Eng Language)
 1. [Clever programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
 
+## SOMETHING I LEARNED FROM MY MANAGER, MY LEADER, MY COLLEAGUE
+- About setting sring by ' or ": some speacial character such as "\n" can be shown by " and ' is not.
