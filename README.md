@@ -6,7 +6,7 @@
 
 ## [III. JAVASCRIPT](https://github.com/TamLNM/SELF-STUDY/blob/master/I.%20DOCUMENTATION/Chapter3.md)
 
-## [IV. PHP]() <updating>
+## [IV. PHP](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/Chapter4.md)
 
 ## [ADDENDUM](https://github.com/TamLNM/SELF-STUDY/blob/master/I.%20DOCUMENTATION/Chapter_Addendum)
 
