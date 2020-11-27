@@ -164,7 +164,10 @@ const arr = ['1', 'abc', '!_fas'];
 console.log(arr.indexOf('abc'));
 ```
 
-#####
+##### h. Array Stringify: convert a JS Object into a string, use in case the developer want to sent data to server
+```javascript
+
+```
 
 ##### Different functions (I think it's not common)
 - Array.reduce()
@@ -309,6 +312,15 @@ let carName = "Volvo";
  
 ### From Indian (Eng Language)
 1. [Clever programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
+
+## WEBSITES THAT'S USEFUL FOR ME:
+1. [HTML Formatter](https://webformatter.com/html)
+You can format the code in CSS, Javascript, PHP, JSON in there
+2. [JSFiddle - For javascript testing](https://jsfiddle.net/)
+3. [DiffChecker - For checking (two file/doc)'s differences](https://www.diffchecker.com/)
+*. [TomatoTime](https://tomato-timer.com/)
+
+
 
 ## SOMETHING I LEARNED FROM MY MANAGERS, MY LEADERS, MY COLLEAGUES
 - About setting sring by ' or ": some speacial character such as "\n" can be shown by " and ' is not.
