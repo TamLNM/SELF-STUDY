@@ -166,15 +166,32 @@ console.log(arr.indexOf('abc'));
 
 ##### h. Array Stringify: convert a JS Object into a string, use in case the developer want to sent data to server
 ```javascript
-
+JSON.stringify(object)
 ```
+* Using examples for JSON.stringify and JSON.parse()
+```javascript
+let objData = {
+	'name': 'Le Nguyen Minh Tam',
+  'age' : 24,
+  'sex' : 'male'
+};
+
+let strData = JSON.stringify(objData);
+console.log(strData);
+
+let initialData = JSON.parse(strData);
+console.log(initialData);
+```
+
+##### i. Object Functions:
+...
 
 ##### Different functions (I think it's not common)
 - Array.reduce()
 - Array.reduceRight()
 - Array.every()
 - Array.some()
-
+- Date.now()
 
 ### 3. ES6 Features
 
@@ -318,7 +335,7 @@ let carName = "Volvo";
 You can format the code in CSS, Javascript, PHP, JSON in there
 2. [JSFiddle - For javascript testing](https://jsfiddle.net/)
 3. [DiffChecker - For checking (two file/doc)'s differences](https://www.diffchecker.com/)
-*. [TomatoTime](https://tomato-timer.com/)
+4. [TomatoTime](https://tomato-timer.com/)
 
 
 
