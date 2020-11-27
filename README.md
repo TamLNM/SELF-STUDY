@@ -4,7 +4,7 @@
 
 ## [II. CODE - USEFUL EXTENSIONS](https://github.com/TamLNM/SELF-STUDY/blob/master/I.%20DOCUMENTATION/Chapter2.md)
 
-## [III. JAVASCRIPT](https://github.com/TamLNM/SELF-STUDY/blob/master/Chapter2_Javascript.md)
+## [III. JAVASCRIPT](https://github.com/TamLNM/SELF-STUDY/blob/master/I.%20DOCUMENTATION/Chapter3.md)
 
 ## [IV. PHP]() <updating>
 
