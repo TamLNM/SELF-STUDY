@@ -100,6 +100,27 @@ function foo(){
 // This will run normally
 bar = 1;
 
+#### b. trim: remove space from both sides of a string
+```javascript
+String.trim();
+```
+
+#### c. Array.isArray: check a variable is array or not
+```javascript
+Array.isArray();
+```
+#### d. Array.forEach: check a variable is array or not
+```javascript
+Array.isArray()
+```
+* Using example:
+```javascript
+let arr = [1,2,3,4];
+arr.forEach(element => { // or arr.forEach(function(element){
+	console.log(element);
+});
+```
+
 ### 3. ES6 Features
 
 
@@ -146,7 +167,7 @@ Examples:
 
 ##### a4. Redeclared variables:
 Examples:
-1.
+- Ex1:
 ```javascript
 var  x = 10;
 // Here x is 10
@@ -156,7 +177,7 @@ var  x = 10;
 }
 // Here x is 2
 ```
-2.
+- Ex2:
 ```javascript
 var  x = 10;
 // Here x is 10
@@ -168,7 +189,7 @@ var  x = 10;
 ```
 ##### a5. Redeclared variables:
 Examples:
-1.
+- Ex1:
 ```javascript
 var i = 5;
 for (var i = 0; i < 10; i++) {
@@ -176,7 +197,7 @@ for (var i = 0; i < 10; i++) {
 }
 // Here i is 10
 ```
-2.
+- Ex2:
 ```javascript
 let i = 5;
 for (let i = 0; i < 10; i++) {
@@ -185,17 +206,18 @@ for (let i = 0; i < 10; i++) {
 // Here i is 5
 ```
 ##### a6. Using window.<variable>:
-1.
+- Ex1:
 ```javascript
 var carName = "Volvo";
 // code here can use window.carName
 
 ```  
-2.
+- Ex2:
 ```javascript
 let carName = "Volvo";
 // code here cannot use window.carName
 ```
+
 ##### a7. Delared with var and let.<variable>:
   > var (allowed) -> var (allowed)/ var (allowed) -> { var (allowed) }
   > let (allowed) -> let (NOT allowed)
