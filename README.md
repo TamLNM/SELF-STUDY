@@ -100,26 +100,78 @@ function foo(){
 // This will run normally
 bar = 1;
 
-#### b. trim: remove space from both sides of a string
+#### b. Trim: remove space from both sides of a string
 ```javascript
 String.trim();
 ```
 
-#### c. Array.isArray: check a variable is array or not
+#### c. Array - Is Array: check a variable is array or not
 ```javascript
 Array.isArray();
 ```
-#### d. Array.forEach: check a variable is array or not
+#### d. Array For Each: check a variable is array or not
 ```javascript
-Array.isArray()
+Array.forEach()
 ```
 * Using example:
 ```javascript
 let arr = [1,2,3,4];
-arr.forEach(element => { // or arr.forEach(function(element){
+arr.forEach(element => {
 	console.log(element);
 });
 ```
+OR you can use:
+```javascript
+let arr = [1,2,3,4];
+arr.forEach(function(element){
+	console.log(element);
+});
+```
+OR you can use:
+```javascript
+let arr = [1,2,3,4];
+arr.forEach(myFunction);
+
+function myFunction(){
+	console.log(element);
+});
+```
+
+##### e. Array Map: update value for each element in array:
+```javascript
+Array.map()
+```
+* Using example:
+```javascript
+
+```
+
+##### f. Array Filter: filter array elements with condition
+```javascript
+const arr = [1,2,3,4];
+const arr1 = arr.filter(e => e >= 2)
+console.log(arr1);
+```
+
+##### g. Array (LAST Index Of): search an element in a array and return the position. In case not find out, it return -1
+```javascript
+Array.indexOf(element)
+Array.lastIndexOf(element)
+```
+* Using example
+```javascript
+const arr = ['1', 'abc', '!_fas'];
+console.log(arr.indexOf('abc'));
+```
+
+#####
+
+##### Different functions (I think it's not common)
+- Array.reduce()
+- Array.reduceRight()
+- Array.every()
+- Array.some()
+
 
 ### 3. ES6 Features
 
@@ -227,6 +279,11 @@ let carName = "Volvo";
   > not (let, var) -> ... -> var (allowed)
   > not (let, var) -> ... -> let (NOT allowed)
 
+##### a8. Const in javascript:
+- Scope: block scope.
+- With the type of variables are primitive (includes: string, number, boolean, null and undefined), we can change the value of variables when declared with const.
+- With the type of variables are reference (include object, array or function) we can change the attributes of this variable.
+
 ## ABBREVIATIONS + TERMINOLOGY
 1. EMCA (in EMCAScript): stands for "European Computer Manufacturer's Association". Can understand like ECMAScript is the modal in build on paper and javascript is the programming language to make it in computer to feel more easily.
 
@@ -253,5 +310,5 @@ let carName = "Volvo";
 ### From Indian (Eng Language)
 1. [Clever programmer](https://www.youtube.com/channel/UCqrILQNl5Ed9Dz6CGMyvMTQ)
 
-## SOMETHING I LEARNED FROM MY MANAGER, MY LEADER, MY COLLEAGUE
+## SOMETHING I LEARNED FROM MY MANAGERS, MY LEADERS, MY COLLEAGUES
 - About setting sring by ' or ": some speacial character such as "\n" can be shown by " and ' is not.
