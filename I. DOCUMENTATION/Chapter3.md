@@ -1,5 +1,5 @@
-## JAVASCRIPT
-### 1. About the ECMAScript Editions:
+# JAVASCRIPT
+## I. About the ECMAScript Editions:
 - We have about six version of ECMA Script, include ES1 - ES6, with 2 nearest function:
 + ES5: edition in 2009
 + ES6: edition in 2015 - 2018
@@ -7,7 +7,7 @@
 <i>* Internet Explorer 9 does not support ECMAScript 5 "use strict".</i>
 <i>Internet Explorer does not support ECMAScript 2015.</i>
 
-### 2. ES5 Features
+## II. ES5 Features
 Includes:
 - use strict
 - String.trim()
@@ -26,7 +26,7 @@ Includes:
 - Date.now()
 - Property Getters and Setters
 - New Object Property Methods
-#### a. Use strict
+### 1. Use strict
 You can understand it as a "stict" mode, more difficult, more rules than tthe standard mode.
 Use for:
 - Prevent use, throw errors with the unsafe processing.
@@ -60,16 +60,16 @@ function foo(){
 // This will run normally
 bar = 1;
 
-#### b. Trim: remove space from both sides of a string
+### 2. Trim: remove space from both sides of a string
 ```javascript
 String.trim();
 ```
 
-#### c. Array - Is Array: check a variable is array or not
+### 3. Array - Is Array: check a variable is array or not
 ```javascript
 Array.isArray();
 ```
-#### d. Array For Each: check a variable is array or not
+### 4. Array For Each: check a variable is array or not
 ```javascript
 Array.forEach()
 ```
@@ -97,7 +97,7 @@ function myFunction(){
 });
 ```
 
-##### e. Array Map: update value for each element in array:
+#### 5. Array Map: update value for each element in array:
 ```javascript
 Array.map()
 ```
@@ -106,14 +106,14 @@ Array.map()
 
 ```
 
-##### f. Array Filter: filter array elements with condition
+#### 6. Array Filter: filter array elements with condition
 ```javascript
 const arr = [1,2,3,4];
 const arr1 = arr.filter(e => e >= 2)
 console.log(arr1);
 ```
 
-##### g. Array (LAST Index Of): search an element in a array and return the position. In case not find out, it return -1
+#### 7. Array (LAST Index Of): search an element in a array and return the position. In case not find out, it return -1
 ```javascript
 Array.indexOf(element)
 Array.lastIndexOf(element)
@@ -124,7 +124,7 @@ const arr = ['1', 'abc', '!_fas'];
 console.log(arr.indexOf('abc'));
 ```
 
-##### h. Array Stringify: convert a JS Object into a string, use in case the developer want to sent data to server
+#### 8. Array Stringify: convert a JS Object into a string, use in case the developer want to sent data to server
 ```javascript
 JSON.stringify(object)
 ```
@@ -143,7 +143,7 @@ let initialData = JSON.parse(strData);
 console.log(initialData);
 ```
 
-##### i. Object Functions:
+#### 9. Object Functions:
 ...
 
 ##### Different functions (I think it's not common)
@@ -153,15 +153,15 @@ console.log(initialData);
 - Array.some()
 - Date.now()
 
-### 3. ES6 Features
+## III. ES6 Features
+`... updating ...`
 
-
-### 4. Let in JS:
+## IV. Let in JS:
 - ES2015 introduced two important new JavaScript keywords: let and const.
 - For <b>Block Scope</b> variables and constants in Javascript
 - We have two different scopes: <b>Global Scope</b> and <b>Function Scope</b>
-#### a. About affectly variables scope
-###### a1. Global scope: which declared in the outside any function position: 
+### 1. About affectly variables scope
+#### a. Global scope: which declared in the outside any function position: 
 Examples:
 ```javascript
 var name = "Le Nguyen Minh Tam";
@@ -170,7 +170,7 @@ function myFunction() {
   // ---> code here can also use name <----
 }
 ```
-###### a2. Function Scrope: which declared locally
+##### b. Function Scrope: which declared locally
 Examples:
 ```javascript
 // ---> code here CAN'T use name <---
@@ -180,7 +180,7 @@ function myFunction() {
 }
 // ---> code here CAN'T use name <---
 ```
-###### a3. Block scope: is the space inside (and between) {}
+##### c. Block scope: is the space inside (and between) {}
 Examples:
 - Var:
 ```javascript
@@ -197,7 +197,7 @@ Examples:
 // x can NOT be used here
 ```
 
-##### a4. Redeclared variables:
+#### d. Redeclared variables:
 Examples:
 - Ex1:
 ```javascript
@@ -219,7 +219,7 @@ var  x = 10;
 }
 // Here x is 10
 ```
-##### a5. Redeclared variables:
+#### e. Redeclared variables:
 Examples:
 - Ex1:
 ```javascript
@@ -237,7 +237,7 @@ for (let i = 0; i < 10; i++) {
 }
 // Here i is 5
 ```
-##### a6. Using window.<variable>:
+#### f. Using window.<variable>:
 - Ex1:
 ```javascript
 var carName = "Volvo";
@@ -250,7 +250,7 @@ let carName = "Volvo";
 // code here cannot use window.carName
 ```
 
-##### a7. Delared with var and let.<variable>:
+#### g. Delared with var and let.<variable>:
   > var (allowed) -> var (allowed)/ var (allowed) -> { var (allowed) }
   > let (allowed) -> let (NOT allowed)
   > let (allowed) -> let (allowed)/ let (allowed) -> { let (allowed) }
@@ -259,26 +259,26 @@ let carName = "Volvo";
   > not (let, var) -> ... -> var (allowed)
   > not (let, var) -> ... -> let (NOT allowed)
 
-##### a8. Const in javascript:
+#### h. Const in javascript:
 - Scope: block scope.
 - With the type of variables are primitive (includes: string, number, boolean, null and undefined), we can change the value of variables when declared with const.
 - With the type of variables are reference (include object, array or function) we can change the attributes of this variable.
 
-### 5. FormData in HTML5:
-#### a. Initialize the FormData in HTML5
+## V. FormData in HTML5:
+### 1. Initialize the FormData in HTML5
 3 common ways to initialize a formdata with Javascript:
 ```javascript
 var formData = new FormData();
 var formData = new FormData(document.getElementById('formID'));
 var formData = new FormData($('form#formID')[0]);
 ```
-#### b. Append:
+### 2. Append:
 <b>Purpose:</b> Attach data to DataForm:
 ```javascript
 formData.append(<key>, <value>);
 ```
 
-#### c. Entries:
+### 3. Entries:
 <b>Purpose:</b> Convert data to type that developer can read or console log
 ```javascript
 formData.append(name, value);
@@ -295,13 +295,13 @@ for(pair of formData.entries()){
 }
 ```
 
-#### d. Values:
+### 4. Values:
 <b>Purpose:</b> similar than <b>Entries</b> function, but just return the value of element
 ```javascript
 fromData.value();
 ```
 
-#### FUNCTION THAT I THINK IT'S NOT COMMON IN USE:
+### FUNCTION THAT I THINK IT'S NOT COMMON IN USE:
 - delete
 - get 
 - getAll
