@@ -4,7 +4,7 @@
 
 ## [II. CODE - USEFUL EXTENSIONS](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/CHAPTER%202%20-%20CODE%20-%20USEFUL%20EXTENSIONS/Chapter2.md)
 
-## [III. JAVASCRIPT](https://github.com/TamLNM/TamLNM_SelfStudy/tree/master/I.%20DOCUMENTATION/CHAPTER%203%20-%20JAVASCRIPT)
+## [III. JAVASCRIPT](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/CHAPTER%203%20-%20JAVASCRIPT/0.Chapter3.md)
 
 ## [IV. PHP](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/CHAPTER%204%20-%20PHP/Chapter4.md)
 
