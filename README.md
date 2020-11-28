@@ -8,6 +8,5 @@
 
 ## [IV. PHP](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/CHAPTER%204%20-%20PHP/Chapter4.md)
 
-## [ADDENDUM](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/CHAPTER%20ADDENDUM/Chapter_Addendum.md
-)
+## [ADDENDUM](https://github.com/TamLNM/TamLNM_SelfStudy/blob/master/I.%20DOCUMENTATION/CHAPTER%20ADDENDUM/Chapter_Addendum.md)
 
