@@ -126,16 +126,31 @@ You can define it like (with TypeScript):
 // point.draw();
 
 // 9 -----------------------------/
-class Point{
-    constructor ( private x?: number, private y?: number ){
-        this.x = x;
-        this.y = y;
-    }
+// class Point{
+//     constructor ( private x?: number, private y?: number ){
+//         this.x = x;
+//         this.y = y;
+//     }
 
-    draw () {
-        console.log('X: ' + this.x + ', Y: ' + this.y);
-    }
-}
+//     draw () {
+//         console.log('X: ' + this.x + ', Y: ' + this.y);
+//     }
+// }
 
-let point = new Point (2, 3);
-point.draw();
+// let point = new Point (2, 3);
+// point.draw();
+
+// 10. TEST DATA TYPE -----------------------------/
+// enum Color {
+//     Red,
+//     Green,
+//     Blue,
+//   }
+//   let c: Color = Color.Green;
+//   console.log(c);
+
+// 11. TEST DATA TYPE -----------------------------/
+enum Lever { EASY, MEDIUM, HARD }
+var myLever = Lever.MEDIUM;
+let anotherPeopleLever: Lever = Lever.HARD;
+console.log(myLever, anotherPeopleLever);

@@ -99,17 +99,32 @@ You can define it like (with TypeScript):
 // // point.setValueForProperties(1, 2);
 // point.draw();
 // 9 -----------------------------/
-var Point = /** @class */ (function () {
-    function Point(x, y) {
-        this.x = x;
-        this.y = y;
-        this.x = x;
-        this.y = y;
-    }
-    Point.prototype.draw = function () {
-        console.log('X: ' + this.x + ', Y: ' + this.y);
-    };
-    return Point;
-}());
-var point = new Point(2, 3);
-point.draw();
+// class Point{
+//     constructor ( private x?: number, private y?: number ){
+//         this.x = x;
+//         this.y = y;
+//     }
+//     draw () {
+//         console.log('X: ' + this.x + ', Y: ' + this.y);
+//     }
+// }
+// let point = new Point (2, 3);
+// point.draw();
+// 10. TEST DATA TYPE -----------------------------/
+// enum Color {
+//     Red,
+//     Green,
+//     Blue,
+//   }
+//   let c: Color = Color.Green;
+//   console.log(c);
+// 11. TEST DATA TYPE -----------------------------/
+var Lever;
+(function (Lever) {
+    Lever[Lever["EASY"] = 0] = "EASY";
+    Lever[Lever["MEDIUM"] = 1] = "MEDIUM";
+    Lever[Lever["HARD"] = 2] = "HARD";
+})(Lever || (Lever = {}));
+var myLever = Lever.MEDIUM;
+var anotherPeopleLever = Lever.HARD;
+console.log(myLever, anotherPeopleLever);
