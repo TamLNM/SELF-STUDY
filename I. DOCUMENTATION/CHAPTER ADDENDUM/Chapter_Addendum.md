@@ -4,6 +4,8 @@
 1. [(Vie) How to use Markdow - Write text for Github](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ)
 2. [(Vie) Codehub Emmet](https://www.codehub.com.vn/Viet-HTML-Nhanh-Hon-Voi-Emmet)
 3. [(Eng) W3Schools](https://www.w3schools.com/)
+4. [Hacksplaining](https://www.hacksplaining.com/features)
+5. [Blog ToiDiCodeDao](https://toidicodedao.com/)
  
 ## MY SELF-STUDY NOTES:
 1. [(Eng) How to covert HTML, CSS, Javascript into Wordpress - Step to do](https://docs.google.com/document/d/1xp-I7kgeLrttyS3ySjwmyGjvt7wh09t4Hn91B2fujmY/edit?usp=sharing)
