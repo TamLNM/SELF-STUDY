@@ -20,9 +20,30 @@ Examples:
   echo addcslashes("Le Nguyen Minh Tam", "a..z");
   // L\e N\g\u\y\e\n M\i\n\h T\a\m
 ```
-## 2. addslashes($string, $char_list)
+## 2. addslashes($string)
+⇒ Add \ before characters: ', "", \ in $string (if exist)
+Example:
+```PHP
+  echo addcslashes("Le Nguyen Minh Tam", "e");
+  // L\e Nguy\en Minh Tam
+```
+
 ## 3. bin2hex($str)
+⇒ Convert string to ACII HEX code
+Example:
+```PHP
+echo bin2hex("Le Nguyen Minh Tam");
+// 4c65204e677579656e204d696e682054616d
+```
+
 ## 4. chop($string, $charList)
+⇒ Delete the ending character if it's similar to $charList
+Example:
+```PHP
+echo chop("Le Nguyen Minh Tam", "Tam");
+// Le Nguyen Minh
+```
+
 ## 5. crc32($string)
 ## 6. explode(Sreperator, $string, $limit)
 ## 7. implode($seperator, $array)
