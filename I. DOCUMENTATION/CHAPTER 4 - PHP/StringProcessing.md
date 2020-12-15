@@ -13,12 +13,12 @@ echo 'She said \'Hello. How are you?\'';
 ## 1. addcslashes($string, $char_list)
 ⇒ Add \ before string in $char_list
 Examples:
-<?php 
+```PHP
   echo addcslashes("Le Nguyen Minh Tam", "e");
   // L\e Nguy\en Minh Tam
   echo addcslashes("Le Nguyen Minh Tam", "a..z");
   // L\e N\g\u\y\e\n M\i\n\h T\a\m
-?>
+```
 ## 2. addslashes($string, $char_list)
 ## 3. bin2hex($str)
 ## 4. chop($string, $charList)
