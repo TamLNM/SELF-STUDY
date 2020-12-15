@@ -44,8 +44,25 @@ echo chop("Le Nguyen Minh Tam", "Tam");
 // Le Nguyen Minh
 ```
 
-## 5. crc32($string)
-## 6. explode(Sreperator, $string, $limit)
+## 5. crc32($string) 
+⇒ Convert a string to integer number
+Example:
+```PHP
+echo crc32("Le Nguyen Minh Tam");
+// 1586453036
+```
+
+## 6. explode($seperator, $string, $limit)
+⇒ Seperate string to multiple child string by character $seperator with maximun $limit (optional) element.
+Example:
+```PHP
+echo explode("e", "Le Nguyen Minh Tam");
+// array(3) { [0]=> string(1) "L" [1]=> string(5) " Nguy" [2]=> string(10) "n Minh Tam" }
+
+echo explode("e", "Le Nguyen Minh Tam", 2);
+// array(2) { [0]=> string(1) "L" [1]=> string(16) " Nguyen Minh Tam" }
+```
+
 ## 7. implode($seperator, $array)
 ## 8. strlen($string)
 ## 9. str_word_count($string)
