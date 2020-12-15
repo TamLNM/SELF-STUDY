@@ -64,19 +64,113 @@ echo explode("e", "Le Nguyen Minh Tam", 2);
 ```
 
 ## 7. implode($seperator, $array)
+⇒ Connect all the string of $array with the character $seperator
+Examples:
+```PHP
+$data = array ("Le", "Nguyen", "Minh", "Tam");
+
+echo implode($data);
+// LeNguyenMinhTam
+
+echo implode(" ", $data);
+// Le Nguyen Minh Tam
+```
+
 ## 8. strlen($string)
+⇒ Get the length of $string
+
 ## 9. str_word_count($string)
+⇒  Count number of word in $string
+Examples:
+```PHP
+echo str_word_count("Le Nguyen Minh Tam");
+// 4
+
+echo str_word_count("www.google.com");
+// 3
+```
+
 ## 10. str_repeat($string, $repeat)
+⇒ Repeat the $string with number of $repear times
+Example:
+```PHP
+echo str_repeat("Le Nguyen Minh Tam", 5);
+// Le Nguyen Minh TamLe Nguyen Minh TamLe Nguyen Minh TamLe Nguyen Minh TamLe Nguyen Minh Tam
+```
+
 ## 11. str_replace($find, $replace, $string)
+⇒ Find the string $find and replace it by $replace in $string
+Example:
+```PHP
+echo str_replace('Nguyene', 'Nguyen', 'Le Nguyene Minh Tam');
+// Le Nguyen Minh Tam
+```
+
 ## 12. md5($string)
+⇒ Convert string into md5 type.
+Example:
+```PHP
+echo md5("Le Nguyen Minh Tam");
+// cca03256e955ba269d8fade80c61cbe9
+```
+
 ## 13. sha1($string)
+⇒ Convert string into sha1.
+Example:
+```PHP
+echo md5("Le Nguyen Minh Tam");
+// 544533a3d0d9ae7540dab36458a09bd8a2a1254f
+```
+
 ## 14. htmlentities($string), htmlspecialchars($string)
+⇒ Convert $string to raw data
+Example: `updating`
+
 ## 15. strip_tags($string, $allow)
+⇒ Remove all the HTML tags in $string excepts $allow
+Examples:
+```PHP
+echo strip_tags("<b>Le Nguyen Minh Tam</b>");
+// Le Nguyen Minh Tam
+
+echo strip_tags("<b>Le Nguyen Minh Tam</b>", "<br>");
+// <b>Le Nguyen Minh Tam</b>
+```
+
 ## 16. substr($string, $start_pos, $length)
+⇒ Cut the string with the start position $start_pos and the number of characters is $length.
+```PHP
+echo substr("Hello world", 10) . "<br>"; //d
+echo substr("Hello world", -1) . "<br>"; //d
+echo substr("Hello world", 0, 10) . "<br>"; //Hello worl
+echo substr("Hello world", 0, -1) . "<br>"; //Hello worl
+```
+
 ## 17. strolower($string)
+⇒ Convert all the string characters to uppercase
+```PHP
+echo strtolower("LE NGUYEN MINH TAM");
+// le nguyen minh tam
+```
+
 ## 18. strtoupper
+⇒ Convert all the string characters to lowercase
+```PHP
+echo strtoupper("le nguyen minh tam");
+// Le Nguyen Minh Tam
+```
+
 ## 19. ucword($string)
+⇒ 
+
 ## 20. ucfirst($string)
+⇒ 
+
 ## 21. trim($string, $charList)
+⇒ 
+
 ## 22. ltrim($string, $charList)
+⇒ 
+
 ## 23. rtrim($string, $charList)
+⇒ 
