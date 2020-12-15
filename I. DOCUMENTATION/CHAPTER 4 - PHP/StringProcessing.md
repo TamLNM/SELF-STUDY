@@ -12,6 +12,7 @@ echo 'She said \'Hello. How are you?\'';
 # II. Usual functions in string processing:
 ## 1. addcslashes($string, $char_list)
 ⇒ Add \ before string in $char_list
+
 Examples:
 ```PHP
   echo addcslashes("Le Nguyen Minh Tam", "e");
